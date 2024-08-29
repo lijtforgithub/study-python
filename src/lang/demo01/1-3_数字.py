@@ -16,5 +16,6 @@ def generate_password(length):
 
     return password
 
+
 print(generate_password(4))
 print(generate_password(6))

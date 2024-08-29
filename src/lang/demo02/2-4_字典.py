@@ -9,13 +9,13 @@ map = {}
 map['one'] = "1 - 菜鸟教程"
 map[2] = "2 - 菜鸟工具"
 
-tinyDict = {'name': 'runoob', 'code': 1, 'site': 'www.runoob.com'}
+tiny_dict = {'name': 'runoob', 'code': 1, 'site': 'www.runoob.com'}
 
 print(map['one'])  # 输出键为 'one' 的值
 print(map[2])  # 输出键为 2 的值
-print(tinyDict)  # 输出完整的字典
-print(tinyDict.keys())  # 输出所有键
-print(tinyDict.values())  # 输出所有值
+print(tiny_dict)  # 输出完整的字典
+print(tiny_dict.keys())  # 输出所有键
+print(tiny_dict.values())  # 输出所有值
 
 # 构造函数 dict() 可以直接从键值对序列中构建字典
 d1 = dict([('Runoob', 1), ('Google', 2), ('Taobao', 3)])

@@ -9,7 +9,7 @@ while counter <= n:
     sum = sum + counter
     counter += 1
 
-print("1 到 %d 之和为: %d" % (n, sum))
+print("1 到 %d 之和为: %d \n" % (n, sum))
 
 count = 5
 while count < 5:
@@ -17,20 +17,24 @@ while count < 5:
     count = count + 1
 else:
     print(count, " 大于或等于 5")
+print()
 
 for x in range(6):
     print(x)
 else:
-    print("Finally finished!")
+    print("Finally finished! \n")
 
 for i in range(0, 10, 3):
     print(i)
+print()
 
 a = ['Google', 'Baidu', 'Runoob', 'Taobao', 'QQ']
 for i in range(len(a)):
     print(i, a[i])
+print()
 
 print(list(range(5)))
+print()
 
 for letter in 'Runoob':
     if letter == 'o':
