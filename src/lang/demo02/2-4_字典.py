@@ -21,3 +21,14 @@ print(tiny_dict.values())  # 输出所有值
 d1 = dict([('Runoob', 1), ('Google', 2), ('Taobao', 3)])
 print(d1)
 print(dict(Runoob=1, Google=2, Taobao=3))
+
+
+knights = {'gallahad': 'the pure', 'robin': 'the brave'}
+for k, v in knights.items():
+    print(k, v)
+print()
+
+questions = ['name', 'quest', 'favorite color']
+answers = ['lancelot', 'the holy grail', 'blue']
+for q, a in zip(questions, answers):
+    print('What is your {0}?  It is {1}.'.format(q, a))
