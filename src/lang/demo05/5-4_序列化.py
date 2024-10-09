@@ -1,6 +1,6 @@
 import pickle
 
-path = '/Users/lijingtang/Downloads/python序列化'
+path = '/Users/lijingtang/Downloads/python/python序列化'
 
 # 使用pickle模块将数据对象保存到文件
 data1 = {'a': [1, 2.0, 3, 4 + 6j],

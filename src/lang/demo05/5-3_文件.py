@@ -1,4 +1,4 @@
-path = '/Users/lijingtang/Downloads/python.txt'
+path = '/Users/lijingtang/Downloads/python/python.txt'
 
 f = open(path, 'w')
 f.write('Python 是一个非常好的语言。\n是的，的确非常好!!\n')
@@ -34,6 +34,7 @@ f.seek(2, 1)
 print(f.read(14))
 
 
+# 关键词 with 语句就可以保证诸如文件之类的对象在使用完之后一定会正确的执行他的清理方法
 with open(path, 'r') as f:
     read_data = f.read()
 print(f.closed)
