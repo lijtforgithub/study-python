@@ -2,6 +2,7 @@ path = '/Users/lijingtang/Downloads/python/python.txt'
 
 f = open(path, 'w')
 f.write('Python 是一个非常好的语言。\n是的，的确非常好!!\n')
+print('print输出', file=f)
 f.close()
 
 f1 = open(path, 'r')

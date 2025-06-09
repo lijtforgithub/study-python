@@ -19,3 +19,19 @@ def generate_password(length):
 
 print(generate_password(4))
 print(generate_password(6))
+
+print(2 ** 3)
+print(5 / 4)
+print(5 // 4)
+print(-5 // -4)
+# 一正一负向下取整
+print(-5 // 4)
+
+
+a = b = 1000
+c = 1000
+print(a == b)
+print(a is b)
+print(a is c)
+print(id(a))
+print(id(c))
