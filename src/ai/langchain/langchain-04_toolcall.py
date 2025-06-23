@@ -19,7 +19,10 @@ print(response)
 if hasattr(response, "tool_calls"):
     for tool_call in response.tool_calls:
         if tool_call["name"] == multiply.name:
+            # 仅使用参数调用
             result = multiply.invoke(tool_call["args"])
             print(f"工具调用结果：{result}")
+            # 使用ToolCall调用
+            print(multiply.invoke(tool_call))
 else:
     print("模型直接回复：", response.content)

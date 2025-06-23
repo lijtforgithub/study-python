@@ -31,3 +31,12 @@ def reverse_words(input):
 input = 'I like runoob'
 rw = reverse_words(input)
 print(rw)
+
+
+# list.sort()
+# list.sort(reverse=True)
+# print(list)
+
+# 列表生成式
+list_range = [i * i for i in range(1, 10)]
+print(list_range)
