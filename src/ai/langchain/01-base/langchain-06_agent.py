@@ -13,10 +13,8 @@ llm = Tongyi(model_name=GlobalConfig.TY_MODEL, api_key=GlobalConfig.TY_KEY)
 @tool
 def multiply(input_str: str) -> int:
     """Multiply two numbers in format 'a=X, b=Y'."""
-    input_str = input_str[1:-1]
-    params = {k.strip(): int(v.strip())
-              for k, v in [pair.split("=")
-                           for pair in input_str.split(",")]}
+    # input_str = input_str[1:-1]
+    params = {k.strip(): int(v.strip()) for k, v in [pair.split("=") for pair in input_str.split(",")]}
     return params["a"] * params["b"]
 
 

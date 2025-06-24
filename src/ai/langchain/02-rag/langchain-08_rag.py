@@ -10,7 +10,6 @@ from langchain_community.llms import Tongyi
 from ai.config import GlobalConfig
 import os
 
-os.environ["USER_AGENT"] = "my-ai-app/1.0.0"
 os.environ["LANGCHAIN_TRACING_V2"] = "false"
 
 

@@ -32,3 +32,12 @@ questions = ['name', 'quest', 'favorite color']
 answers = ['lancelot', 'the holy grail', 'blue']
 for q, a in zip(questions, answers):
     print('What is your {0}?  It is {1}.'.format(q, a))
+
+
+# 字典生成式
+keys = ['a', 'b', 'c']
+vals = [1, 2, 3, 4]
+dict = {k.upper():v for k, v in zip(keys, vals)}
+print(dict.get('a'))
+# KeyError
+print(dict['a'])
