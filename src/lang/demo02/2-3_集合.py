@@ -21,3 +21,7 @@ print(a - b)  # a 和 b 的差集
 print(a | b)  # a 和 b 的并集
 print(a & b)  # a 和 b 的交集
 print(a ^ b)  # a 和 b 中不同时存在的元素
+
+# 集合生成式
+set_range = {i * i for i in range(1, 10)}
+print(set_range)
