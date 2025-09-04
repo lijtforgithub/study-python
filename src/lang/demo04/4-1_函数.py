@@ -55,3 +55,18 @@ def variable_param2(arg1, **var_dict):
 
 
 variable_param2(1, a=2, b=3)
+
+
+def fun1(a, b, c):
+    print(a, b, c)
+
+list1 = [1, 2, 3]
+fun1(*list1)
+
+dict1 = {"c": 3, "b": 2, "a": 1}
+fun1(**dict1)
+
+# * 号后面的参数必须使用关键字传参
+def fun2(a, b, *, c):
+    print(a, b, c)
+fun2(1, 2, c=3)
