@@ -1,3 +1,37 @@
+# 被装饰函数带有参数或不带参数
+def deco1(func):
+    def inner(*args, **kwargs):
+        # 包含所有要附件的功能
+        func(*args, **kwargs)
+
+    return inner
+
+
+# 装饰器本身带参数
+def deco2(param):
+    def outer(func):
+        def inner(*args, **kwargs):
+            # 包含所有要附件的功能
+            func(*args, **kwargs)
+
+        return inner
+
+    return outer
+
+
+# 被装饰函数带返回值
+def deco3(param):
+    def outer(func):
+        def inner(*args, **kwargs):
+            # 包含所有要附件的功能
+            result = func(*args, **kwargs)
+            return result
+
+        return inner
+
+    return outer
+
+
 def repeat(n):
     def decorator(func):
         def wrapper(*args, **kwargs):
@@ -28,6 +62,7 @@ class DecoratorClass:
         result = self.func(*args, **kwargs)
         # 在调用原始函数之后执行的代码
         return result
+
 
 @DecoratorClass
 def my_function():

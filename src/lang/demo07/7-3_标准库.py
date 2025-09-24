@@ -10,6 +10,8 @@
 
 # 操作系统接口
 import os
+import time
+
 current_dir = os.getcwd()
 print("当前工作目录:", current_dir)
 files = os.listdir(current_dir)
@@ -62,6 +64,7 @@ for line in urlopen('http://www.baidu.com'):
 # 日期和时间
 import datetime
 
+print(int(time.time()))
 current_datetime = datetime.datetime.now()
 print(current_datetime)
 

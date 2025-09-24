@@ -23,3 +23,21 @@
 - is 用于判断两个变量引用对象是否为同一个， == 用于判断引用变量的值是否相等。
 - 不可变数据（3 个）：Number（数字）、String（字符串）、Tuple（元组）
 - 可变数据（3 个）：List（列表）、Dictionary（字典）、Set（集合）
+
+#### 命令
+
+```shell
+# 在本地生成环境的所有依赖列表
+pip3 freeze > requirements.txt
+
+pip install pipreqs
+pipreqs --force .
+
+pip3 install -r requirements.txt
+
+echo $CONDA_DEFAULT_ENV
+conda config --show envs_dirs
+```
+
+
+

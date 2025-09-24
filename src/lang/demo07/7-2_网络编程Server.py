@@ -6,6 +6,7 @@ server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 # 获取本地主机名
 host = socket.gethostname()
+print(host)
 
 port = 9999
 
