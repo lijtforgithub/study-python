@@ -21,7 +21,7 @@ print(new_set)
 print({x for x in 'abracadabra' if x not in 'abc'})
 print()
 
-# 元组推导式（生成器表达式）
+# 元组推导式（只有元祖返回的是生成器）
 a = (x for x in range(1, 10))
 print(a)
 print(tuple(a))
